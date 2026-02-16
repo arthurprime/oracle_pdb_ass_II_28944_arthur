@@ -1,6 +1,6 @@
 # oracle_pdb_ass_II_28944_arthur
-Oracle Pluggable Databases (PDB) Management Assignment II
-Overview of Tasks
+## Oracle Pluggable Databases (PDB) Management Assignment II
+### Overview of Tasks
 This repository documents my completion of Individual Assignment II for the course Database Development with PL/SQL (INSY 8311) at AUCA. The assignment focuses on Oracle Multitenant Architecture, specifically creating and managing Pluggable Databases (PDBs), user creation, using Oracle Enterprise Manager (OEM), and professional documentation.
 The tasks include:
 
@@ -18,7 +18,7 @@ Operating System: Windows/Linux (as per lab machine).
 Connection: Connected as SYSDBA for administrative tasks.
 
 Explanation of Each Task
-Task 1: Create a New Pluggable Database
+### Task 1: Create a New Pluggable Database
 I created a Pluggable Database (PDB) using the naming convention: FirstTwoLettersOfFirstName_pdb_StudentID (e.g., ar_pdb_2024101, assuming my student ID is 2024101 and first name Arthur).
 Commands used:
 
@@ -27,7 +27,7 @@ ALTER PLUGGABLE DATABASE ar_pdb_2024101 OPEN;
 
 Then, I created a user inside the PDB: arthur_plsqlauca_2024101 with a simple password.
 Evidence: Screenshots in the screenshots/ folder showing the creation command, PDB open state, and user creation (with username visible).
-Task 2: Create and Delete a PDB
+### Task 2: Create and Delete a PDB
 I created a temporary PDB using the naming convention: FirstTwoLettersOfFirstName_to_delete_pdb_StudentID (e.g., ar_to_delete_pdb_2024101).
 Commands used:
 
@@ -37,7 +37,7 @@ Deletion: DROP PLUGGABLE DATABASE ar_to_delete_pdb_2024101 INCLUDING DATAFILES;
 Confirmation: SHOW PDBS; (to verify it no longer exists).
 
 Evidence: Screenshots in the screenshots/ folder showing creation, verification, deletion, and confirmation.
-Task 3: Oracle Enterprise Manager (OEM)
+### Task 3: Oracle Enterprise Manager (OEM)
 I configured and accessed OEM by starting the listener and ensuring the database was registered.
 
 Accessed OEM via browser (e.g., https://localhost:5500/em).
